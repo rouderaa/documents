@@ -1,0 +1,1 @@
+Python program to read data from website minibiebs.nl in order to generate data for the osmand application.

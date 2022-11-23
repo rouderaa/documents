@@ -1,0 +1,2 @@
+Converts the file favourites.xml on your iphone for the osmand application and adds the minibies.xml data information.
+First run the minibiebs project and then this project to obtain the favourites.gpx file.
