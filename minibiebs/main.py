@@ -3,7 +3,7 @@ import requests
 import re
 import json
 
-fromWeb = True
+fromWeb = False
 def collectdata(city):
     print("collecting data for : %s." % (city))
     filename = "minibiebs_" + city + ".txt"
@@ -156,9 +156,10 @@ def convertToXml(elements):
 
 # Generate minibiebs.xml file
 xml = '<?xml version="1.0"?>'
-xml = xml + '<gpx version="1.1" creator="OsmAnd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" >'
+# xml = xml + '<gpx version="1.1" creator="OsmAnd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" >'
+xml = xml + '<gpx version="1.1" creator="OsmAnd" >'
 
-cities = ["utrecht", "amersfoort", "barneveld", "leusden", "soest", "nijkerk", "baarn", "woudenberg", "zeist"]
+cities = ["utrecht", "amersfoort", "barneveld", "leusden", "soest", "nijkerk", "baarn", "woudenberg", "zeist", "hilversum", "bunschoten", "hoevelaken", "terschuur", "zwartebroek" ]
 # cities = ["barneveld"]
 for city in cities:
     htmlData = collectdata(city)
