@@ -32,7 +32,6 @@ def generateWpts(wpts, nsmap, resultFilename):
 def merge(mergeFilename, mainFilename, resultFilename):
     mergeDoc = LT.parse(mergeFilename)
     mainDoc = LT.parse(mainFilename)
-    # resultDoc = LT.
 
     mergeRoot = mergeDoc.getroot()
     mainRoot = mainDoc.getroot()
