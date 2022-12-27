@@ -1,7 +1,9 @@
 #
 # Demo usage of opencv 2 hand recognition
 # Based on the excellent video : https://www.youtube.com/watch?v=vQZ4IvB07ec&t=205s
-# Made by Nicholas Renotte
+# Made by Nicolas Renotte
+#
+# Uses the following Python libs: opencv-python, opencv-contrib-python, mediapipe, uuid
 #
 
 import mediapipe as mp
